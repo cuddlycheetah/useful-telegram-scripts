@@ -38,7 +38,7 @@ async function bruteForceSticker(name, expansion, id) {
 	}
 	if (res.response._ == 'error') {
 		if (res.response.message === 'STICKERSET_INVALID')
-			return setTimeout(bruteForceSticker, 50, name, expansion)
+			return setTimeout(bruteForceSticker, 10, name, expansion)
 		console.log(res.response)
 	}
 }
