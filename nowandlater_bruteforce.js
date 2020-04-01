@@ -21,7 +21,7 @@ async function main() {
 	console.time('100Sets')
 	await bruteForceSticker('Teerath', false)
 }
-let stickerId = 2456
+let stickerId = 0 // change this to the last stickerId, when resuming a bf
 async function bruteForceSticker(name, expansion, id) {
 	id = id || '00000'
 	const identifier = `${name}${ pad(stickerId + 10000, 5, '0') }N${expansion ? ' ' : 'a'}L`
